@@ -27,7 +27,7 @@ class ChatBubbleClipper5 extends CustomClipper<Path> {
       var path2 = Path();
       path2.addRRect(RRect.fromLTRBAndCorners(0, 0, radius, radius,
           topLeft: Radius.circular(secondRadius)));
-      path.addPath(path2, Offset(0, 0));
+      path.addPath(path2, Offset(0, size.height - radius));
     }
 
     return path;
